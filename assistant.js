@@ -23,3 +23,21 @@ PersonalAssistant.prototype.completeTask = function() {
 PersonalAssistant.prototype.reportMood = function() {
   console.log("Mood:", this.mood);
 };
+
+// Simulate a day in my life
+// Create an instance of PersonalAssistant
+let myAI = new PersonalAssistant("Jess");
+
+console.log("Hi! I'm " + myAI.name + ", your assistant.");
+
+myAI.reportMood(); // Should be neutral
+
+myAI.addTask("Finish CS81 reflection");
+myAI.addTask("Walk the dog");
+myAI.addTask("Laundry");
+
+myAI.completeTask(); // Completes "Finish CS81 reflection"
+myAI.reportMood();
+
+myAI.completeTask(); // Completes "Walk the dog"
+myAI.reportMood();
