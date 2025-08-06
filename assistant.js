@@ -19,3 +19,7 @@ PersonalAssistant.prototype.completeTask = function() {
     console.log("No tasks left to complete.");
   }
 };
+
+PersonalAssistant.prototype.reportMood = function() {
+  console.log("Mood:", this.mood);
+};
